@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/logo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/js.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+    <title>MedacDent</title>
+</head>
+<body>
+
+    <!-- Cabecera -->
+
+    <header class="web__header">
+
+        <img src="assets/images/logo.jpeg" class="header__image">
+        <h1 class="header__title">MedacDent</h1>
+        
+
+    </header>
+    
+
+    <!--Boton para cargar el formulario y botón para gestionar citas -->
+
+    <main id="main-content">
+        
+        <button onclick="mostrarFormulario();" class="main-content__button">Solicitar cita</button>
+        <button onclick="" class="main-content__button">Comprobar citas</button>
+
+    </main>
+
+        <form class="form" id="form">
+            <h3>Registro de citas</h3>
+
+            <div class="form-container">
+            <label class="form__option">Horario <input type="datetime-local" id="citeDate"></label>
+            <label class="form__option">Nombre <input type="text" placeholder="Inserte su nombre" id="name"></label>
+            <label class="form__option">Apellidos <input type="text" placeholder="Inserte su apellidos" id="surname"></label>
+            <label class="form__option">Email <input type="email" placeholder="Inserte su Email" id="email"></label>
+            <label class="form__option">Teléfono <input type="tel" placeholder="Inserte su teléfono" id="tel" pattern="[0-9]+"></label>
+            <label class="form__option">Fecha de nacimiento <input type="date" id="birthDate" placeholder="Inserte su fecha de nacimiento"></label>
+            <button  id="btnSend" class="form__button">Enviar</button>
+            <input class="form__button" type="reset">
+            <button class="form__button" onclick="ocultarForm()" id="cancel">Cancelar</button>
+        </div>
+        </form>
+
+
+    <!-- Formulario para añadir citas// día mes año/nombre, apellidos, teléfono, fecha de nacimiento/ observaciones
+    No se repita las citas, no se sobrepongan, objeto cita  -->
+    <!-- Poder modificar o eliminar las existentes  -->
+    <!-- footer -->    
+</body>
+</html>
